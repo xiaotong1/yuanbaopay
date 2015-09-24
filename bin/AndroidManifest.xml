@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yuanbaopay"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.main.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.main.MainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.main.RegisterActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.main.RegisterCreatepwdActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.main.RegisterAddCardActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.transfer.TransferFirstActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.transfer.TransferForthActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.transfer.TransferSecondActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.transfer.TransferThirdActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.transfer.TransferToBankActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.transfer.TransferLimitActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.redpacket.MypacketMainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.redpacket.RedPacketIntimateActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.redpacket.RedPacketIntimateSecondActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.redpacket.RedPacketLuckyActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.redpacket.RedPacketMainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.redpacket.RedPacketTraditionActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.pay.PayActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.service.ServiceMainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.managemoney.ManageMoneyActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.managemoney.ManageMoneyOutActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.managemoney.ManageMoneyInActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.fortune.FortuneAddCardActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.fortune.FortuneCardActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.fortune.FortuneMainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.fortune.FortuneAccountMainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.fortune.FortuneBalanceChargeActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.fortune.FortuneBalanceToBankActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.intimatepay.IntimatePayWelcomeActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.intimatepay.IntimatePayCreateActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.intimatepay.IntimatePayMainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.intimatepay.IntimatePaySuccessActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.intimatepay.IntimatePayStateActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.bill.BillActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.note.AddNoteActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.note.NoteActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.info.InfoActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.info.InfoModifyActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.gesture.GestureEditActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.gesture.GestureVerifyActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.ForgetPasswordFirstActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.ForgetPasswordLastActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.ForgetPasswordSecondActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.SecurityChangeGestruePwdActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.SecurityChangeLoginPwdActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.SecurityChangeLoginPwdSecondActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.SecurityChangePayPwdActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.SecurityMainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.security.SecurityReportLossActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.AutoFocusCallback" >
+        </activity>
+        <activity
+            android:name="cn.seu.edu.yuanbaopay.cameraQR.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.CameraConfigurationManager" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.CameraManager" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.CaptureActivityHandler" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.CreateQRImageTest" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.DecodeFormatManager" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.DecodeHandler" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.DecodeThread" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.FinishListener" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.FlashlightManager" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.InactivityTimer" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.Intents" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.PlanarYUVLuminanceSource" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.PreviewCallback" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.ViewfinderResultPointCallback" >
+        </activity>
+        <activity android:name="cn.seu.edu.yuanbaopay.cameraQR.ViewfinderView" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+</manifest>

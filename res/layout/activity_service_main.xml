@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include layout="@layout/title_back_and_title"
+        android:id="@+id/title_layout"/>"
+
+    <cn.seu.edu.yuanbaopay.service.MyJazzyViewPager
+        android:layout_below="@id/title_layout"
+        android:id="@+id/id_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

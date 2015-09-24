@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_back_and_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+        android:text="请绑定持卡人本人的银行卡"
+        android:textColor="@color/grey_text"
+        android:textSize="@dimen/font_medium" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="16dp"
+            android:gravity="center|left"
+            android:text="持卡人"
+            android:textSize="@dimen/font_medium" />
+
+        <EditText
+            android:id="@+id/edTxt_name_addcard_register"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请程序员获取用户本人姓名"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="16dp"
+            android:gravity="center|left"
+            android:text="卡号" />
+
+        <EditText
+            android:id="@+id/edTxt_cardnum_addcard_register"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="银行卡号"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_bank_addcard_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:gravity="center|left"
+            android:text="银行" />
+
+        <TextView
+            android:id="@+id/tv_bank_addcard_register"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请选择银行"
+            android:textSize="@dimen/font_medium" />
+        <!-- 这里是出现下面的弹窗然后选择银行 -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_tie_addcard_register"
+        style="@style/common_button_style_green"
+        android:layout_width="@dimen/btn_weight"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="绑定" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.yuanbaobao.RedpaperActivity" >
+
+    <include
+        android:id="@+id/layout_title_mypacket"
+        layout="@layout/title_redpacket" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title_mypacket"
+        android:background="@drawable/redpacket"
+        android:orientation="vertical" >
+
+        <TextView
+        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="190dp"
+            android:text="你问我爱你有多深   红包代表我的心♥"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/font_normal" />
+
+        <Button
+            android:id="@+id/btn_redpacket_tolucky"
+            style="@style/common_button_style_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="24dp"
+            android:text="运气红包" />
+
+        <Button
+            android:id="@+id/btn_redpacket_totradition"
+            style="@style/common_button_style_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_redpacket_tolucky"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="24dp"
+            android:text="传统红包" />
+
+        <Button
+            android:id="@+id/btn_redpacket_tointimate"
+            style="@style/common_button_style_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_redpacket_tolucky"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="24dp"
+            android:text="知心红包" />
+    </LinearLayout>
+
+</RelativeLayout>

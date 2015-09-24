@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_back_and_title" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/intimate_allbg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="220dp"
+            android:text="请输入对方账户"
+            android:textColor="@color/pink_btn"
+            android:textSize="@dimen/font_large" />
+
+        <EditText
+            android:id="@+id/edtTxt_friendName_intipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="6" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_to_create_intipay"
+            style="@style/common_button_style_pink"
+            android:layout_width="@dimen/btn_weight_intimate"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="下一步" />
+    </LinearLayout>
+
+</LinearLayout>

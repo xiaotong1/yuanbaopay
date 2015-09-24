@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/formal_activity_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_back_and_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_choose_bank_charge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_white"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="银行" />
+
+        <TextView
+            android:id="@+id/tv_bank_balancecharge"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请选择银行"
+            android:textSize="@dimen/font_medium" />
+        <!-- 这里是出现下面的弹窗然后选择银行 -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_white"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="金额" />
+
+        <EditText
+            android:id="@+id/edtTxt_money_balancecharge"
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请输入充值金额"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="该卡本次最多可充值9,999.00元"
+            android:textColor="@color/grey_text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ensure_balancecharge"
+        style="@style/common_button_style_green"
+        android:layout_width="@dimen/btn_weight"
+        android:layout_height="@dimen/btn_height"
+        android:layout_gravity="center_horizontal"
+        android:text="确定" />
+    <!-- 点击确定，之后弹窗进行转账，输入密码成功之后有个小弹窗显示成功 -->
+
+</LinearLayout>

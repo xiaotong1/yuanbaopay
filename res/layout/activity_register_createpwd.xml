@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_back_and_title" />
+
+    <LinearLayout
+        android:layout_below="@id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/color_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="请为您的元宝宝账户设置支付密码 "
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_medium" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="?android:attr/listDivider" />
+        
+        <Button
+        android:id="@+id/btn_nextto_addcard"
+        style="@style/common_button_style_green"
+        android:layout_width="@dimen/btn_weight"
+        android:layout_height="@dimen/btn_height"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.9"
+        android:layout_marginTop="8dp"
+        android:text="点击设置" />
+    </LinearLayout>
+
+</RelativeLayout>

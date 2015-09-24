@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/formal_activity_background"
+    android:orientation="vertical" >
+
+    <!-- textview里面写：账户安全 -->
+
+    <include layout="@layout/title_back_and_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_changeloginpwd_securitymain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="left|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center|left"
+            android:text="重置登录密码"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/tv_changeloginpwd_securitymain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:text=">"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_changepaypwd_securitymain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="left|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center|left"
+            android:text="重置支付密码"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/tv_changepaypwd_securitymain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:text=">"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_changeguesturepwd_securitymain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="start"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center|left"
+            android:text="重置手势密码"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/tv_changeguesturepwd_securitymain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:text=">"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_reportloss_securitymain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="start"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center|left"
+            android:text="快速挂失"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/tv_reportloss_securitymain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:text=">"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

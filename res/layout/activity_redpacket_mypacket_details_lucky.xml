@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/redpacket_details"
+    android:orientation="vertical" >
+<!-- title上面要写：运气红包 -->
+    <include layout="@layout/title_back_and_title" />
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- 发送者的头像 -->
+
+        <ImageView
+            android:id="@+id/mgView_senderportrait_mypacketdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/ic_launcher" />
+
+        <!-- 发送者的姓名 -->
+
+        <TextView
+            android:id="@+id/tv_sendername_mypacketdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="黄小胖" />
+
+
+        <!-- 红包的钱数 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/edtTxt_received_mypacketdetails_"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="0.9"
+                android:textColor="@color/red_light"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="元"
+                android:textColor="@color/red_light" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider" />
+      
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="你收到了红包总额的"
+                android:textColor="@color/grey_text"/>
+            <TextView
+                android:id="@+id/tv_receivedluckymoney_mypacketdetailslucky"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="90%以上"
+                android:gravity="bottom"
+                android:textColor="@color/red_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="!"
+                android:textColor="@color/grey_text"/>
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="今天运气不错，去买个彩票试试手气吧^_o"
+            android:textColor="@color/grey_text" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/formal_activity_background" >
+
+    <include layout="@layout/title_back_and_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/mgView_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/edtTxt_realname_transfer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="昵称（真实姓名）" />
+
+            <TextView
+                android:id="@+id/edtTxt_phonenum_transfer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="12312341234" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/transfer_money_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:text="金额" />
+
+            <EditText
+                android:id="@+id/edtTxt_amount_transfer3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="每笔最高20万"
+                android:textSize="@dimen/font_medium" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/color_white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:text="备注" />
+
+            <EditText
+                android:id="@+id/edtTxt_note_transfer3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="20字以内"
+                android:textSize="@dimen/font_medium" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="该账户本次转账额度为200,000元"
+                android:textColor="@color/grey_text" />
+
+            <TextView
+                android:id="@+id/tv_explainlimite_transfer3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:text="限额说明"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ensure_transfer"
+            style="@style/common_button_style_green"
+            android:layout_width="@dimen/btn_weight"
+            android:layout_height="@dimen/btn_height"
+            android:text="确认转账" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

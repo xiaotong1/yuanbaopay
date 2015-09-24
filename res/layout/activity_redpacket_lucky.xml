@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_title_redpacket_lucky"
+        layout="@layout/title_back_and_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title_redpacket_lucky"
+        android:background="@drawable/redpacket_lucky"
+        android:orientation="vertical" >
+
+        <!-- 图片+字 -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="您的朋友可随机得到红包中的一定金额"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/font_normal" />
+        
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="（剩余部分元宝宝自会返还给您^_^）"
+             android:textColor="@color/red_light"
+            android:textSize="@dimen/font_normal"/>
+
+        <!-- 第一行:红包接受者 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="88dp"
+                android:text="朋友账户："
+                android:textSize="@dimen/font_medium" />
+
+            <EditText
+                android:id="@+id/edTxt_accpeter_luckypacket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5" >
+            </EditText>
+        </LinearLayout>
+        <!-- 第二行:红包金额 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红包金额："
+                android:textSize="@dimen/font_medium"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edTxt_redpacketamount_luckypacket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="24dp" >
+
+            <Button
+                android:id="@+id/btn_ensure_luckypacket"
+                style="@style/common_button_style_red"
+                android:layout_width="@dimen/btn_weight_intimate"
+                android:layout_height="@dimen/btn_height"
+                android:text="包红包" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

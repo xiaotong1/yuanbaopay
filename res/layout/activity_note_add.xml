@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="com.example.yuanbaobao.MainActivity" >
+
+    <include layout="@layout/title_back_and_title"
+        android:id="@+id/title_layout" />
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/title_layout"
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.PagerTabStrip>
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/inputmoney_note_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="请输入金额" >
+        </EditText>
+    <Button
+style="@style/common_button_style_green"
+        android:id="@+id/btn_addmoney_noteadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white" >
+<include layout="@layout/title"/>
+    <LinearLayout
+        android:id="@+id/linearlayot1_main"
+        android:layout_width="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_height="140dp"
+        android:alpha="0.5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white" >
+
+            <ImageView
+                android:id="@+id/portrait_main"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ybbp" />
+
+            <TextView
+                android:id="@+id/tv_comment2_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="55dp"
+                android:layout_toRightOf="@+id/portrait_main"
+                android:gravity="center"
+                android:text="今日天气晴☀" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_comment3_main"
+                android:layout_alignBottom="@+id/tv_comment3_main"
+                android:layout_alignLeft="@+id/tv_comment2_main"
+                android:layout_marginLeft="8dp"
+                android:text="适宜转账" />
+
+            <TextView
+                android:id="@+id/tv_comment3_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tv_comment1_main"
+                android:layout_below="@+id/tv_comment1_main"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="下午好！" />
+
+            <TextView
+                android:id="@+id/tv_comment1_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_comment2_main"
+                android:layout_alignBottom="@+id/tv_comment2_main"
+                android:layout_marginRight="7dp"
+                android:layout_toLeftOf="@+id/portrait_main"
+                android:gravity="center"
+                android:text="亲爱的用户" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+        <View
+        android:id="@+id/view7_main"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"      
+        android:layout_below="@id/linearlayot1_main"
+        android:background="@color/gray_bg" />
+        <View
+        android:id="@+id/view8_main"
+        android:layout_width="fill_parent"
+        android:layout_height="25px"   
+        android:layout_below="@id/view7_main"
+        android:background="@color/formal_activity_background" />
+    <View
+        android:id="@+id/view2_main"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"      
+        android:layout_below="@id/view8_main"
+        android:background="@color/gray_bg" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:layout_below="@id/view2_main"
+        android:gravity="center_horizontal"
+        android:numColumns="4" />
+    <View
+        android:id="@+id/view4_main"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"      
+        android:layout_below="@id/gridView"
+        android:background="@color/gray_bg" />
+        <View
+        android:id="@+id/view5_main"
+        android:layout_width="fill_parent"
+        android:layout_height="25px"   
+        android:layout_below="@id/view4_main"
+        android:background="@color/formal_activity_background" />
+    <View
+        android:id="@+id/view1_main"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"    
+        android:layout_below="@id/view5_main"
+        android:background="@color/gray_bg" />
+    <!-- 切换卡 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/view1_main" >
+    </android.support.v4.view.ViewPager>
+
+    <!-- 点点 -->
+
+    <LinearLayout
+        android:id="@+id/viewGroup_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/viewPager_ad"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/formal_activity_background"       
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_packet_main"
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="70dp"
+             android:layout_marginBottom="8dp"
+             android:layout_marginTop="5dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/packet_main"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_fortune_main"
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/fortune_main"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

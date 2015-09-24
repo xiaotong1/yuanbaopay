@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_type_redreceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="data"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_people_redreceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="people"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_money_redreceive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="money"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" >
+    </TextView>
+
+</LinearLayout>

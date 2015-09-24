@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.seu.edu.redpacket.Intimateredpaper2Activity" >
+
+    <include
+        android:id="@+id/layout_title_redpacket_intimate2"
+        layout="@layout/title_back_and_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title_redpacket_intimate2"
+        android:background="@drawable/redpacket"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:text="请输入问题：" />
+
+            <EditText
+                android:id="@+id/edTXT_ques_redpacketinti2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:text="     答案1：" />
+
+            <EditText
+                android:id="@+id/edTxt_answerone_redpacketinti2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:text="     答案2：" />
+
+            <EditText
+                android:id="@+id/edTxt_answertwo_redpacketinti2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"          
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_ensure_intimate_packet"
+                style="@style/common_button_style_red"
+                 android:layout_width="@dimen/btn_weight_intimate"
+                android:layout_height="@dimen/btn_height"
+                android:text="包红包" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

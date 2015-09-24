@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redpacket_details"
+    android:orientation="vertical" >
+
+    <!-- title上面要写：运气红包 -->
+
+    <include layout="@layout/title_back_and_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:orientation="vertical" >
+
+        <!-- 发送者的头像 -->
+
+        <ImageView
+            android:id="@+id/mgView_senderportrait_mypacketdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/ic_launcher" />
+
+        <!-- 发送者的姓名 -->
+
+        <TextView
+            android:id="@+id/tv_sendername_mypacketdetails_intimate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="黄小胖" />
+
+        <!-- 红包的钱数 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <!-- 在点击拆红包之后，这个问好tv要变成想要的钱-就是答案正确了得到全部红包的钱，答案错误是0元 -->
+
+            <TextView
+                android:id="@+id/edtTxt_received_mypacketdetails_intimate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="？"
+                android:textColor="@color/red_light"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="元"
+                android:textColor="@color/red_light" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider" />
+        <!-- 关于知心红包的问题与答案 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical" >
+
+            <!-- 问题 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="问题："
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/tv_question_mypacket_inti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="这个真的是问题，要从数据库中读取"
+                    android:textSize="@dimen/font_medium" />
+            </LinearLayout>
+            <!-- 选项 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                        android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案："
+                           android:layout_marginTop="16dp"
+                        android:textColor="@color/grey_text"
+                        android:textSize="@dimen/font_medium" />
+
+                    <RadioGroup
+                        android:id="@+id/rdoGrp_answer_mypacket_inti"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="答案" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/rdoBtn_answer1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="第一个答案(也是从数据库中读取的)"
+                                android:textSize="@dimen/font_medium" />
+
+                            <RadioButton
+                                android:id="@+id/rdoBtn_answer2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="第二个答案"
+                                android:textSize="@dimen/font_medium" />
+                        </LinearLayout>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        <Button
+            android:id="@+id/btn_jugeanswer_mypacket_inti"
+            style="@style/common_button_style_red"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:text="拆红包" />
+<!-- 这句话在点击按钮之前是不存在的。。点击之后才出来。 -->
+        <TextView
+            android:id="@+id/tv_comments_mypacket_inti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="看来你对朋友还是很了解的嘛！领赏吧~"
+            android:textColor="@color/grey_text" />
+    </LinearLayout>
+
+</LinearLayout>

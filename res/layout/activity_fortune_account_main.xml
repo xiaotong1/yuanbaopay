@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/formal_activity_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_back_and_title" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="left|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center|left"
+            android:text="账户余额"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/tv_accountbalance_fortuneaccountmain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:text="314.26元"
+            android:textSize="@dimen/font_medium"
+            android:textColor="@color/grey_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_charge_fortune"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="left|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center|left"
+            android:text="充值"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/tv_charge_fortuneaccountmain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:text=">"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/layout_tobank_fortune"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:background="@color/color_white"
+        android:gravity="start"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center|left"
+            android:text="余额转出(提现)"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/tv_remove_fortuneaccountmain"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:text=">"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

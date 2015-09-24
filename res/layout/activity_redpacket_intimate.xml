@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_title_redpacket_intimate"
+        layout="@layout/title_back_and_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title_redpacket_intimate"
+        android:background="@drawable/redpacket_intimate"
+        android:orientation="vertical" >
+
+        <!-- 图片+字 -->
+
+        <TextView
+      
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="谁知我心  一试便知√"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/font_normal" />
+
+        <!-- 第一行:红包接受者 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="88dp"
+                android:text="朋友账号：" />
+
+            <EditText
+                android:id="@+id/edTxt_accpeter_redpacketintimate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5" >
+            </EditText>
+        </LinearLayout>
+        <!-- 第二行:红包金额 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红包金额："
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edTxt_redpacketamount_redpacketintimate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- 第四行:下一步按钮 -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_to_intimate_redpacketintimate1"
+        style="@style/common_button_style_red"
+        android:layout_width="@dimen/btn_weight_intimate"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="下一步" />
+
+</RelativeLayout>
